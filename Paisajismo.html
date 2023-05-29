@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanesa de Toledo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s;
+    z-index: 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    z-index: 100;
+    border-bottom-right-radius: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  .header a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .header a::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.header a:hover::before {
+  width: 100%;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 3%;
+  right: 3%;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 900;
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-style: solid;
+  border-top-color: white;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-top-width:2px;
+  align-items: center;
+  justify-content: flex-end;
+  
+
+}
+
+.footer .icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 35px;
+}
+
+.icon-1, .icon-2 {
+  font-size: 30px;
+}
+
+  .footer a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
+
+.footer a:first-child {
+    margin-right: 15px;
+    margin-left: 75%;
+  
+  }
+
+  .Logo img {
+    height: 100px; /* make it bigger */
+    width: auto;
+    position: relative; /* add this to make z-index effective, if needed */
+    z-index: 1500;
+    margin-top: 2px;
+    margin-left: 0px; /* reduce this to avoid pushing the image outside the visible area */
+    margin-right: 1270px;
+}
+
+
+
+ 
+
+</style>
+
+<script>
+  function changeSlide(slides, currentIndex) {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+    return currentIndex;
+  }
+
+  
+    window.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        setInterval(function() {
+            currentIndex = changeSlide(slides, currentIndex);
+        }, 5500); // 4 seconds visible + 1.5 seconds transition = 5500 ms
+    });
+</script>
+
+</head>
+
+<body>
+<div class="header">
+  <a href="http://127.0.0.1:5500/Paisajismo.html">Vanesa de Toledo</a> 
+  <a href="projects.html">proyectos</a> 
+  <a href="about.html">manifiesto</a>
+  </div>
+</div>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide active"><img src="flautas-violetas_files/jardin-modern-oscurecimiento-1.jpg" alt=""></div> 
+    <div class="slide"><img src="jardín-sevilla_files/patio-naranjos.jpeg" alt=""></div>
+    <div class="slide"><img src="flautas-violetas_files/escaleras-modern-recorte.jpg" alt=""></div>
+    <div class="slide"><img src="jardin-terraza_files/plantas-terraza-oscurecimiento-2.jpg" alt=""></div> 
+    <div class="slide"><img src="Images/Puerta.JPG" alt=""></div>
+  </div>
+</div>
+
+<div class="footer">
+ 
+  <div class="Logo"> 
+    <img src="Images/Logo-paisajismo-nuevo-blanco.png" alt="">
+  </div>
+
+  <div class="icon-container">
+    <div class="icon-1">
+      <a href="https://www.instagram.com/vanesadetoledopaisajista/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="icon-2">
+      <a href="mailto:Vanesadetoledo@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

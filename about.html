@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <style>
+
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(108, 118, 104);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+      }
+
+      .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: white;
+    z-index: 100;
+    border-bottom-right-radius: 40px;
+  }
+
+  .header a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .header a::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.header a:hover::before {
+  width: 100%;
+  color:rgb(53, 64, 52);  
+}
+
+      .main-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-Top: 200px;
+        color: white;
+      }
+
+
+
+
+      .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 850px;  /* You can adjust this value */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.2);
+}
+
+       .Greenfish {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 30px;
+       }
+
+       .Text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top: 10px;
+       }
+
+       .Text-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top: 10px;
+       }
+
+       
+      
+    
+       .Greenfish img {
+        width: 850px;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+       }
+
+      
+       
+      
+       .Text-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top: 10px;
+       }
+
+       .Text-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top:10px;
+       }
+      
+       .Text-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top: 10px;
+       }
+      
+     
+       .Text-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-right: 70px;
+        margin-left: 780px;
+        font-size: 20px;
+        margin-top: 60px;
+       }
+      
+       
+
+
+
+
+
+.Linkedin {
+    margin-right: 10px; /* Adjust as needed */
+    margin-left: 100px;
+    margin-top: 72px;   /* Adjust as needed */
+    margin-bottom: 80px;
+    color: white;
+}
+
+.Linkedin img {
+    height: 50px;      /* Adjust as needed */
+    width: auto;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; /* Adjust as needed */
+}
+
+.creative-market,
+.linkedin {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+    margin-left: 740px;
+    margin-top: 0px;   /* Adjust as needed */
+    margin-bottom: 0px;
+}
+
+.creative-market img {
+  height: 100%;
+   width: auto;
+}
+
+.linkedin img {
+  height: 100%;
+   width: auto;
+  filter: invert(1) brightness(2) sepia(1);
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+
+
+
+
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 900;
+  background-color: transparent;
+  border-style: solid;
+  border-top-color: white;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-top-width:2px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 1390px;
+  margin-left: 46.9px;
+  margin-right: 46.9px;
+  margin-top: 100px;
+
+
+}
+
+.footer .icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 35px;
+}
+
+.icon-1, .icon-2 {
+  font-size: 30px;
+}
+
+  .footer a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
+
+
+.footer a:first-child {
+    margin-right: 15px;
+    margin-left: 75%;
+  
+  }
+
+  .Logo img {
+    height: 100px; /* make it bigger */
+    width: auto;
+    position: relative; /* add this to make z-index effective, if needed */
+    z-index: 1500;
+    margin-top: 2px;
+    margin-left: 0px; /* reduce this to avoid pushing the image outside the visible area */
+    margin-right: 1220px;
+}
+
+
+      
+
+  </style>
+
+</head>
+
+<body>   
+
+  <div class="header">
+    <a href="http://127.0.0.1:5500/Paisajismo.html">Vanesa de Toledo</a> 
+    <a href="projects.html">proyectos</a> 
+    <a href="about.html">manifiesto</a>
+    </div>
+  
+
+  <div class="main-layout">  
+  
+
+     <div class="Text"> 
+      <div class="me"> <p> Nuestra filosofía se basa en enfocar cada proyecto como único, buscando elevar los elementos que hacen de un jardín un universo en pequeño. Cada proyecto es un nuevo lenguaje que nos exige una forma nueva de mirar. Respetamos el entorno natural buscando la riqueza y la armonía.
+      </p> </div>
+    </div>
+
+    <div class="Greenfish"> 
+      <div class="image-container">  
+        <a href="project-4.html">  <img src="cenador-familia_files/cenador-familia.jpg"  alt=""> </a>
+      </div>
+    </div>
+
+    <div class="Text-b"> 
+      <div class="me"> <p> Por otro lado, nuestro diseño es una práctica de creación conjunta, vamos de la mano de cada cliente para atender cuidadosamente sus necesidades. No obstante, nuestro conocimiento profundo de las plantas y sus combinaciones tiene un papel fundamental en el plano final. 
+      </p> </div>
+    </div>
+
+    <div class="Text-2"> 
+      <div class="me-2"> <p> Abordamos con pasión y dedicación cada proyecto que realizamos. Cada nuevo espacio es único y nos adaptamos a él con el fin de maximizar sus cualidades.  
+      </p> </div>
+    </div>
+
+    <div class="Text-2"> 
+      <div class="me-2"> <p> Nuestros campos de acción habituales son viviendas unifamiliares, fincas, terrazas, áticos, espacios verdes en hoteles, oficinas y restaurantes, patios comunes y comunidades de vecinos, huertos y mantenimiento, tanto en reformas como en obra nueva. Nos responsabilizamos del diseño y la producción de cada proyecto en cada una de sus fases, hasta el último detalle.
+      </p> </div>
+    </div>
+
+    
+
+    <div class="Greenfish"> 
+      <div class="image-container">   
+     <a href="project-1.html"> <img src="jardín-sevilla_files/terraza-colgante.jpg"  alt=""> </a> 
+     </div>
+  </div>
+
+    <div class="Text-3"> 
+      <div class="me-3"> <p>  Nuestro método se amolda a las singularidades de cada proyecto. Una primera visita al lugar es esencial para conocer las necesidades de rendimiento del jardín en su entorno.
+      </p> </div>
+    </div>
+
+    <div class="Text-3"> 
+      <div class="me-3"> <p>  Luego, siguiendo las preferencias del cliente en términos de árboles, flores, estructuras, formas y estilos, realizamos el diseño. Siempre tomamos en consideración todas las variables técnicas que definen el espacio (clima, orientación, sombras, puntos soleados, vegetación existente, riqueza del suelo, etc.)
+      </p> </div>
+    </div>
+
+    <div class="Text-3"> 
+      <div class="me-3"> <p>  Una vez aprobado el diseño y la selección de las plantas, procedemos a supervisar la ejecución del proyecto. En nuestro equipo, contamos con ingenieros y arquitectos para el apoyo técnico de la obra, en la que estamos presentes de principio a fin.
+      </p> </div>
+    </div>
+
+
+
+    <div class="Greenfish"> 
+      <div class="image-container">   
+      <a href="project-2.html"> <img src="flautas-violetas_files/flautas-violetas.jpg"  alt=""> </a>
+      </div>
+  </div>
+
+    <div class="Text-4"> 
+      <div class="me-4"> <p>  Tras licenciarse en Filosofía e Idioma Chino, Vanesa realizó el Máster de Paisajismo en el Instituto Europeo di Design (IED). Más tarde, estudio los principios del Feng Shui paisajístico.
+      </p> </div>
+    </div>
+
+    <div class="Text-4"> 
+      <div class="me-4"> <p>   Su actividad laboral ha estado centrada en medios culturales, artísticos y académicos, hasta lanzar en 2013 su propio Estudio de Paisajismo. Sus proyectos comparten el firme compromiso de realzar el entorno natural, de tal modo que se cree una atmósfera que resulte atractiva, fresca, cambiante y contemporánea.
+      </p> </div>
+    </div>
+
+    <div class="Greenfish"> 
+      <div class="image-container">   
+      <a href="project-1.html"> <img src="jardín-sevilla_files/flores-rojas-contra-ventana.JPG"  alt=""> </a>
+      </div>
+  </div>
+
+
+    <div class="Text-5"> 
+      <div class="works"> <p> Vanesa diversifica sus proyectos en labores fotográficas que le permiten difundir las cualidades de sus jardines. Puedes visitar el abanico de su labor profesional en:</p> </div>
+    </div>
+
+    <div class="logo-container">
+      <a class="creative-market" href="https://creativemarket.com/vanesaGardens">
+      <img src="Creative-Market-Logo/brand-assets/creative_market_script_white.png" alt="Creative Market Logo">
+    </a>
+    
+    <a class="Linkedin" href="https://www.linkedin.com/in/vanesadetoledo/?originalSubdomain=es">
+      <img src="LinkedIn-Logos/LinkedIn-Logos/LI-Logo.png" alt="Linkedin Logo">
+    </a>
+  </div>
+  
+
+    
+
+
+    <div class="footer">
+ 
+      <div class="Logo"> 
+        <img src="Images/Logo-paisajismo-nuevo-blanco.png" alt="">
+      </div>
+    
+      <div class="icon-container">
+        <div class="icon-1">
+          <a href="https://www.instagram.com/vanesadetoledopaisajista/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="icon-2">
+          <a href="mailto:Vanesadetoledo@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+
+    <div class="footer-line"> </div>
+
+
+</body>
+
+
+
+</html>
+
+
